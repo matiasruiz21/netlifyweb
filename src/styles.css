@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+    @apply bg-white rounded overflow-hidden shadow-md relative;
+}
+
+.badge {
+    @apply bg-summerblue-300 text-summerblue-400 text-xs font-bold rounded-full p-2 absolute top-0 m-2;
+}
