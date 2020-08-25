@@ -8,5 +8,5 @@
 }
 
 .badge {
-    @apply bg-summerblue-300 text-summerblue-400 text-xs font-bold rounded-full p-2 absolute top-0 m-2;
+    @apply text-summerblue-400 text-xs font-bold rounded-full p-2 absolute top-0 m-2;
 }

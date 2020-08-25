@@ -1,14 +1,22 @@
 {
-  "name": "mypage",
+  "name": "netlifyweb",
   "version": "1.0.0",
   "description": "",
-  "main": "theme.js",
+  "main": "stylelint.config.js",
   "scripts": {
     "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasruiz21/netlifyweb.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiasruiz21/netlifyweb/issues"
+  },
+  "homepage": "https://github.com/matiasruiz21/netlifyweb#readme",
   "dependencies": {
     "tailwindcss": "^1.7.3"
   }
