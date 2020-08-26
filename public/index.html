@@ -6,6 +6,7 @@
     <title>Paytechsh</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="popimgstyle.css">
     <style>
         #menu-toggle:checked + #menu {
           display: block;
@@ -88,7 +89,7 @@
                 <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
                     <!--cards go here-->
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/bolso3.jpg" alt="bolso" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/bolso3.jpg" onclick="myFunc(this)" alt="Bolso de Emergencia" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Bolso de Emergencia</span>
                             <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral, bolsillos para medicamentos, ampollas, etc.</span>
@@ -98,7 +99,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/bolso2.jpg" alt="dos bolsos" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/bolso2.jpg" onclick="myFunc(this)" alt="Bolso de Anestesia" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Bolso de Anestesia</span>
                             <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillos para ampollas, laringoscopio, mangos, cánulas de mayo y máscara, separadores en su interior.</span>
@@ -108,7 +109,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/bolde medico de auto y emergencia.jpg" alt="riñonera" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/bolde medico de auto y emergencia.jpg" onclick="myFunc(this)" alt="Bolso Medico de Auto" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Bolso Medico de Auto</span>
                             <span class="block text-gray-500 text-sm">Tela impermeable.Bolsillos para medicamentos, separadores en interior para anticépticos, tensometro, gasas, etc. Proteccion antichoque.</span>
@@ -124,7 +125,7 @@
                 <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
                     <!--cards go here-->
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/mochilaviaaerea2.JPG" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/mochilaviaaerea2.JPG" onclick="myFunc(this)" alt="Mochila Via Aerea" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Mochila Via Aerea</span>
                             <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral grande, 2 bolsillos laterales, bolsillos interiores para laringoscopio, cánulas de mayo, sondas, sujetadores de tubo de óxigeno, espacio para bosla de Ambú - Adulto y pediátrico</span>
@@ -134,7 +135,7 @@
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/mochilaviaaerea4.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/mochilaviaaerea4.jpg" onclick="myFunc(this)" alt="Mochila Via Aerea" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Mochila Via Aerea</span>
                             <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral grande, 2 bolsillos laterales, bolsillos interiores para laringoscopio, cánulas de mayo, sondas, sujetadores de tubo de óxigeno, espacio para bosla de Ambú - Adulto y pediátrico</span>
@@ -150,21 +151,21 @@
                 <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
                     <!--cards go here-->
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/chaleco1 de paramedico.jpg" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/chaleco1 de paramedico.jpg" onclick="myFunc(this)" alt="Chaleco de Paramedico" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Paramedico</span>
                             <span class="block text-gray-500 text-sm">Con un reflectivo 3M y logo bordado de la empresa. Regulable en ancho y 2 bolsillos en el frente.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/chaleco de extricacion adulto.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/chaleco de extricacion adulto.jpg" onclick="myFunc(this)" alt="Chaleco de Extricacion Adulto" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Extricacion Adulto</span>
                             <span class="block text-gray-500 text-sm">con correas para mentón y frente y suplemento cervical y bolso.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/chalecodeextricacionpediatrico.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/chalecodeextricacionpediatrico.jpg" onclick="myFunc(this)" alt="Chaleco de Extricacion Pediatrico" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Extricacion Pediatrico</span>
                             <span class="block text-gray-500 text-sm">Con correas para mentón y frente y sumplemento cervical y bolso.</span>
@@ -177,27 +178,37 @@
                 <div class="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 ">
                     <!--cards go here-->
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/ferulasrigida.jpg" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/ferulasrigida.jpg" onclick="myFunc(this)" alt="Ferulas Rigidas" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Ferulas Rigidas</span>
                             <span class="block text-gray-500 text-sm">6 férulas + bolso. 1 pierna lárga, 1 bota, 2 brazos largos y 2 brazos cortos.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/spider.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/spider.jpg" onclick="myFunc(this)" alt="Spider" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Spider</span>
                             <span class="block text-gray-500 text-sm">Correas pre-armadas de rescate; permite la extracción del paciente en diferentes cúbitos</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl transform hover:scale-105 duration-300">
-                        <img src="img/fundadetubodeexigeno.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
+                        <img src="img/fundadetubodeexigeno.jpg" onclick="myFunc(this)" alt="Funda de Tubo de Oxigeno" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Funda de Tubo de Oxigeno</span>
                             <span class="block text-gray-500 text-sm"></span>
                         </div>
                     </div>
                 </div>
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close" onclick="modal.style.display = 'none'">&times;</span>
+              
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01" />
+              
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                  </div>
             </div>
 
             <h4 class="text-lg font-bold mt-12 pb-2 border-b border-gray-300" id="contacto">Contacto</h4>
@@ -380,6 +391,8 @@
                 </div>
             </div>
         </footer>
+
+        <script src="popimg.js"></script>
 </body>
 
 </html>
