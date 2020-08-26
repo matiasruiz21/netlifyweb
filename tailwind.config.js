@@ -1,6 +1,9 @@
 module.exports = {
   purge: [],
   theme: {
+    rotate:{
+      '360':'360deg',
+    },
     extend: {
       colors: {
         navyblue: {
@@ -20,11 +23,14 @@ module.exports = {
       }
     },
       fontFamily: {
-        paytech: ['Chakra Petch']
+        paytech: ['Chakra Petch'],
+        roboto: ['Roboto']
       },
     },
   },
-  variants: {},
+  variants: {
+    animation: ['responsive', 'hover', 'focus'],
+  },
   plugins: [],
 }
 

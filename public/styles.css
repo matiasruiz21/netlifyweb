@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -11013,6 +11015,10 @@ video {
 
 .font-paytech{
   font-family: Chakra Petch;
+}
+
+.font-roboto{
+  font-family: Roboto;
 }
 
 .font-hairline{
@@ -22462,88 +22468,16 @@ video {
   --transform-scale-y: 1.5;
 }
 
-.rotate-0{
-  --transform-rotate: 0;
+.rotate-360{
+  --transform-rotate: 360deg;
 }
 
-.rotate-45{
-  --transform-rotate: 45deg;
+.hover\:rotate-360:hover{
+  --transform-rotate: 360deg;
 }
 
-.rotate-90{
-  --transform-rotate: 90deg;
-}
-
-.rotate-180{
-  --transform-rotate: 180deg;
-}
-
-.-rotate-180{
-  --transform-rotate: -180deg;
-}
-
-.-rotate-90{
-  --transform-rotate: -90deg;
-}
-
-.-rotate-45{
-  --transform-rotate: -45deg;
-}
-
-.hover\:rotate-0:hover{
-  --transform-rotate: 0;
-}
-
-.hover\:rotate-45:hover{
-  --transform-rotate: 45deg;
-}
-
-.hover\:rotate-90:hover{
-  --transform-rotate: 90deg;
-}
-
-.hover\:rotate-180:hover{
-  --transform-rotate: 180deg;
-}
-
-.hover\:-rotate-180:hover{
-  --transform-rotate: -180deg;
-}
-
-.hover\:-rotate-90:hover{
-  --transform-rotate: -90deg;
-}
-
-.hover\:-rotate-45:hover{
-  --transform-rotate: -45deg;
-}
-
-.focus\:rotate-0:focus{
-  --transform-rotate: 0;
-}
-
-.focus\:rotate-45:focus{
-  --transform-rotate: 45deg;
-}
-
-.focus\:rotate-90:focus{
-  --transform-rotate: 90deg;
-}
-
-.focus\:rotate-180:focus{
-  --transform-rotate: 180deg;
-}
-
-.focus\:-rotate-180:focus{
-  --transform-rotate: -180deg;
-}
-
-.focus\:-rotate-90:focus{
-  --transform-rotate: -90deg;
-}
-
-.focus\:-rotate-45:focus{
-  --transform-rotate: -45deg;
+.focus\:rotate-360:focus{
+  --transform-rotate: 360deg;
 }
 
 .translate-x-0{
@@ -23897,6 +23831,56 @@ video {
           animation: bounce 1s infinite;
 }
 
+.hover\:animate-none:hover{
+  -webkit-animation: none;
+          animation: none;
+}
+
+.hover\:animate-spin:hover{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.hover\:animate-ping:hover{
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.hover\:animate-pulse:hover{
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.hover\:animate-bounce:hover{
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
+.focus\:animate-none:focus{
+  -webkit-animation: none;
+          animation: none;
+}
+
+.focus\:animate-spin:focus{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+.focus\:animate-ping:focus{
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.focus\:animate-pulse:focus{
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.focus\:animate-bounce:focus{
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 .card {
   --bg-opacity: 1;
   background-color: #fff;
@@ -23908,9 +23892,6 @@ video {
 }
 
 .badge {
-  --bg-opacity: 1;
-  background-color: #189AB4;
-  background-color: rgba(24, 154, 180, var(--bg-opacity));
   --text-opacity: 1;
   color: #05445E;
   color: rgba(5, 68, 94, var(--text-opacity));
@@ -34345,6 +34326,10 @@ video {
 
   .sm\:font-paytech{
     font-family: Chakra Petch;
+  }
+
+  .sm\:font-roboto{
+    font-family: Roboto;
   }
 
   .sm\:font-hairline{
@@ -45794,88 +45779,16 @@ video {
     --transform-scale-y: 1.5;
   }
 
-  .sm\:rotate-0{
-    --transform-rotate: 0;
+  .sm\:rotate-360{
+    --transform-rotate: 360deg;
   }
 
-  .sm\:rotate-45{
-    --transform-rotate: 45deg;
+  .sm\:hover\:rotate-360:hover{
+    --transform-rotate: 360deg;
   }
 
-  .sm\:rotate-90{
-    --transform-rotate: 90deg;
-  }
-
-  .sm\:rotate-180{
-    --transform-rotate: 180deg;
-  }
-
-  .sm\:-rotate-180{
-    --transform-rotate: -180deg;
-  }
-
-  .sm\:-rotate-90{
-    --transform-rotate: -90deg;
-  }
-
-  .sm\:-rotate-45{
-    --transform-rotate: -45deg;
-  }
-
-  .sm\:hover\:rotate-0:hover{
-    --transform-rotate: 0;
-  }
-
-  .sm\:hover\:rotate-45:hover{
-    --transform-rotate: 45deg;
-  }
-
-  .sm\:hover\:rotate-90:hover{
-    --transform-rotate: 90deg;
-  }
-
-  .sm\:hover\:rotate-180:hover{
-    --transform-rotate: 180deg;
-  }
-
-  .sm\:hover\:-rotate-180:hover{
-    --transform-rotate: -180deg;
-  }
-
-  .sm\:hover\:-rotate-90:hover{
-    --transform-rotate: -90deg;
-  }
-
-  .sm\:hover\:-rotate-45:hover{
-    --transform-rotate: -45deg;
-  }
-
-  .sm\:focus\:rotate-0:focus{
-    --transform-rotate: 0;
-  }
-
-  .sm\:focus\:rotate-45:focus{
-    --transform-rotate: 45deg;
-  }
-
-  .sm\:focus\:rotate-90:focus{
-    --transform-rotate: 90deg;
-  }
-
-  .sm\:focus\:rotate-180:focus{
-    --transform-rotate: 180deg;
-  }
-
-  .sm\:focus\:-rotate-180:focus{
-    --transform-rotate: -180deg;
-  }
-
-  .sm\:focus\:-rotate-90:focus{
-    --transform-rotate: -90deg;
-  }
-
-  .sm\:focus\:-rotate-45:focus{
-    --transform-rotate: -45deg;
+  .sm\:focus\:rotate-360:focus{
+    --transform-rotate: 360deg;
   }
 
   .sm\:translate-x-0{
@@ -47159,6 +47072,56 @@ video {
   }
 
   .sm\:animate-bounce{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .sm\:hover\:animate-none:hover{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .sm\:hover\:animate-spin:hover{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .sm\:hover\:animate-ping:hover{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .sm\:hover\:animate-pulse:hover{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .sm\:hover\:animate-bounce:hover{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .sm\:focus\:animate-none:focus{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .sm\:focus\:animate-spin:focus{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .sm\:focus\:animate-ping:focus{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .sm\:focus\:animate-pulse:focus{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .sm\:focus\:animate-bounce:focus{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
@@ -57586,6 +57549,10 @@ video {
 
   .md\:font-paytech{
     font-family: Chakra Petch;
+  }
+
+  .md\:font-roboto{
+    font-family: Roboto;
   }
 
   .md\:font-hairline{
@@ -69035,88 +69002,16 @@ video {
     --transform-scale-y: 1.5;
   }
 
-  .md\:rotate-0{
-    --transform-rotate: 0;
+  .md\:rotate-360{
+    --transform-rotate: 360deg;
   }
 
-  .md\:rotate-45{
-    --transform-rotate: 45deg;
+  .md\:hover\:rotate-360:hover{
+    --transform-rotate: 360deg;
   }
 
-  .md\:rotate-90{
-    --transform-rotate: 90deg;
-  }
-
-  .md\:rotate-180{
-    --transform-rotate: 180deg;
-  }
-
-  .md\:-rotate-180{
-    --transform-rotate: -180deg;
-  }
-
-  .md\:-rotate-90{
-    --transform-rotate: -90deg;
-  }
-
-  .md\:-rotate-45{
-    --transform-rotate: -45deg;
-  }
-
-  .md\:hover\:rotate-0:hover{
-    --transform-rotate: 0;
-  }
-
-  .md\:hover\:rotate-45:hover{
-    --transform-rotate: 45deg;
-  }
-
-  .md\:hover\:rotate-90:hover{
-    --transform-rotate: 90deg;
-  }
-
-  .md\:hover\:rotate-180:hover{
-    --transform-rotate: 180deg;
-  }
-
-  .md\:hover\:-rotate-180:hover{
-    --transform-rotate: -180deg;
-  }
-
-  .md\:hover\:-rotate-90:hover{
-    --transform-rotate: -90deg;
-  }
-
-  .md\:hover\:-rotate-45:hover{
-    --transform-rotate: -45deg;
-  }
-
-  .md\:focus\:rotate-0:focus{
-    --transform-rotate: 0;
-  }
-
-  .md\:focus\:rotate-45:focus{
-    --transform-rotate: 45deg;
-  }
-
-  .md\:focus\:rotate-90:focus{
-    --transform-rotate: 90deg;
-  }
-
-  .md\:focus\:rotate-180:focus{
-    --transform-rotate: 180deg;
-  }
-
-  .md\:focus\:-rotate-180:focus{
-    --transform-rotate: -180deg;
-  }
-
-  .md\:focus\:-rotate-90:focus{
-    --transform-rotate: -90deg;
-  }
-
-  .md\:focus\:-rotate-45:focus{
-    --transform-rotate: -45deg;
+  .md\:focus\:rotate-360:focus{
+    --transform-rotate: 360deg;
   }
 
   .md\:translate-x-0{
@@ -70400,6 +70295,56 @@ video {
   }
 
   .md\:animate-bounce{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .md\:hover\:animate-none:hover{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .md\:hover\:animate-spin:hover{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .md\:hover\:animate-ping:hover{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .md\:hover\:animate-pulse:hover{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .md\:hover\:animate-bounce:hover{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .md\:focus\:animate-none:focus{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .md\:focus\:animate-spin:focus{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .md\:focus\:animate-ping:focus{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .md\:focus\:animate-pulse:focus{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .md\:focus\:animate-bounce:focus{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
@@ -80827,6 +80772,10 @@ video {
 
   .lg\:font-paytech{
     font-family: Chakra Petch;
+  }
+
+  .lg\:font-roboto{
+    font-family: Roboto;
   }
 
   .lg\:font-hairline{
@@ -92276,88 +92225,16 @@ video {
     --transform-scale-y: 1.5;
   }
 
-  .lg\:rotate-0{
-    --transform-rotate: 0;
+  .lg\:rotate-360{
+    --transform-rotate: 360deg;
   }
 
-  .lg\:rotate-45{
-    --transform-rotate: 45deg;
+  .lg\:hover\:rotate-360:hover{
+    --transform-rotate: 360deg;
   }
 
-  .lg\:rotate-90{
-    --transform-rotate: 90deg;
-  }
-
-  .lg\:rotate-180{
-    --transform-rotate: 180deg;
-  }
-
-  .lg\:-rotate-180{
-    --transform-rotate: -180deg;
-  }
-
-  .lg\:-rotate-90{
-    --transform-rotate: -90deg;
-  }
-
-  .lg\:-rotate-45{
-    --transform-rotate: -45deg;
-  }
-
-  .lg\:hover\:rotate-0:hover{
-    --transform-rotate: 0;
-  }
-
-  .lg\:hover\:rotate-45:hover{
-    --transform-rotate: 45deg;
-  }
-
-  .lg\:hover\:rotate-90:hover{
-    --transform-rotate: 90deg;
-  }
-
-  .lg\:hover\:rotate-180:hover{
-    --transform-rotate: 180deg;
-  }
-
-  .lg\:hover\:-rotate-180:hover{
-    --transform-rotate: -180deg;
-  }
-
-  .lg\:hover\:-rotate-90:hover{
-    --transform-rotate: -90deg;
-  }
-
-  .lg\:hover\:-rotate-45:hover{
-    --transform-rotate: -45deg;
-  }
-
-  .lg\:focus\:rotate-0:focus{
-    --transform-rotate: 0;
-  }
-
-  .lg\:focus\:rotate-45:focus{
-    --transform-rotate: 45deg;
-  }
-
-  .lg\:focus\:rotate-90:focus{
-    --transform-rotate: 90deg;
-  }
-
-  .lg\:focus\:rotate-180:focus{
-    --transform-rotate: 180deg;
-  }
-
-  .lg\:focus\:-rotate-180:focus{
-    --transform-rotate: -180deg;
-  }
-
-  .lg\:focus\:-rotate-90:focus{
-    --transform-rotate: -90deg;
-  }
-
-  .lg\:focus\:-rotate-45:focus{
-    --transform-rotate: -45deg;
+  .lg\:focus\:rotate-360:focus{
+    --transform-rotate: 360deg;
   }
 
   .lg\:translate-x-0{
@@ -93641,6 +93518,56 @@ video {
   }
 
   .lg\:animate-bounce{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .lg\:hover\:animate-none:hover{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .lg\:hover\:animate-spin:hover{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .lg\:hover\:animate-ping:hover{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .lg\:hover\:animate-pulse:hover{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .lg\:hover\:animate-bounce:hover{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .lg\:focus\:animate-none:focus{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .lg\:focus\:animate-spin:focus{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .lg\:focus\:animate-ping:focus{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .lg\:focus\:animate-pulse:focus{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .lg\:focus\:animate-bounce:focus{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
@@ -104068,6 +103995,10 @@ video {
 
   .xl\:font-paytech{
     font-family: Chakra Petch;
+  }
+
+  .xl\:font-roboto{
+    font-family: Roboto;
   }
 
   .xl\:font-hairline{
@@ -115517,88 +115448,16 @@ video {
     --transform-scale-y: 1.5;
   }
 
-  .xl\:rotate-0{
-    --transform-rotate: 0;
+  .xl\:rotate-360{
+    --transform-rotate: 360deg;
   }
 
-  .xl\:rotate-45{
-    --transform-rotate: 45deg;
+  .xl\:hover\:rotate-360:hover{
+    --transform-rotate: 360deg;
   }
 
-  .xl\:rotate-90{
-    --transform-rotate: 90deg;
-  }
-
-  .xl\:rotate-180{
-    --transform-rotate: 180deg;
-  }
-
-  .xl\:-rotate-180{
-    --transform-rotate: -180deg;
-  }
-
-  .xl\:-rotate-90{
-    --transform-rotate: -90deg;
-  }
-
-  .xl\:-rotate-45{
-    --transform-rotate: -45deg;
-  }
-
-  .xl\:hover\:rotate-0:hover{
-    --transform-rotate: 0;
-  }
-
-  .xl\:hover\:rotate-45:hover{
-    --transform-rotate: 45deg;
-  }
-
-  .xl\:hover\:rotate-90:hover{
-    --transform-rotate: 90deg;
-  }
-
-  .xl\:hover\:rotate-180:hover{
-    --transform-rotate: 180deg;
-  }
-
-  .xl\:hover\:-rotate-180:hover{
-    --transform-rotate: -180deg;
-  }
-
-  .xl\:hover\:-rotate-90:hover{
-    --transform-rotate: -90deg;
-  }
-
-  .xl\:hover\:-rotate-45:hover{
-    --transform-rotate: -45deg;
-  }
-
-  .xl\:focus\:rotate-0:focus{
-    --transform-rotate: 0;
-  }
-
-  .xl\:focus\:rotate-45:focus{
-    --transform-rotate: 45deg;
-  }
-
-  .xl\:focus\:rotate-90:focus{
-    --transform-rotate: 90deg;
-  }
-
-  .xl\:focus\:rotate-180:focus{
-    --transform-rotate: 180deg;
-  }
-
-  .xl\:focus\:-rotate-180:focus{
-    --transform-rotate: -180deg;
-  }
-
-  .xl\:focus\:-rotate-90:focus{
-    --transform-rotate: -90deg;
-  }
-
-  .xl\:focus\:-rotate-45:focus{
-    --transform-rotate: -45deg;
+  .xl\:focus\:rotate-360:focus{
+    --transform-rotate: 360deg;
   }
 
   .xl\:translate-x-0{
@@ -116882,6 +116741,56 @@ video {
   }
 
   .xl\:animate-bounce{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .xl\:hover\:animate-none:hover{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .xl\:hover\:animate-spin:hover{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .xl\:hover\:animate-ping:hover{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .xl\:hover\:animate-pulse:hover{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .xl\:hover\:animate-bounce:hover{
+    -webkit-animation: bounce 1s infinite;
+            animation: bounce 1s infinite;
+  }
+
+  .xl\:focus\:animate-none:focus{
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .xl\:focus\:animate-spin:focus{
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+
+  .xl\:focus\:animate-ping:focus{
+    -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .xl\:focus\:animate-pulse:focus{
+    -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .xl\:focus\:animate-bounce:focus{
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }

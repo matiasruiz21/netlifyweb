@@ -6,47 +6,82 @@
     <title>Paytechsh</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        #menu-toggle:checked + #menu {
+          display: block;
+        }
+    </style>
 </head>
 
-<body>
+<body class="antialiased">
 
     <div>
         <!-- content wrapper-->
-        <div class="fixed bg-white z-50 w-screen h-16 shadow-lg" >
-            <nav style="background-color: #00304E;">
-                <div class="flex flex-row items-center">
-                    <h1 class="font-bold uppercase p-4">
-                        <a href="/" class="font-paytech text-white text-2xl">Paytechsh</a>
-                    </h1>
-                    <div class="m-2 text-white  hover:text-gray-400 text-sm sm:text-lg ml-1">
-                        <a href="#">
-                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                class="information-circle w-5 sm:w-6 h-6 inline-block mb-1">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                            <span>Nosotros</span>
-                        </a>
-                    </div>
-                    <div class="m-2 text-white hover:text-gray-400 text-sm sm:text-lg ">
-                        <a href="#contacto">
-                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                                class="mail w-5 sm:w-6 h-6 inline-block mb-1">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                            <span>Contacto</span>
-                        </a>
-                    </div>
+        <header
+      class="lg:px-6 transition ease-out duration-500 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2"
+      style="background-color: #00304e;"
+    ><div class="flex-1 flex justify-between items-center">
+      <a href="/">
+        <div class="font-paytech text-2xl font-bold uppercase p-4 text-white">
+          Paytechsh
+        </div>
+      </a>
+      </div>
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block"><svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+      <input type="checkbox" class="hidden" id="menu-toggle">
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+      <nav>
+        <ul class="lg:flex items-center justify-between text-lg text-white pt-1 lg:pt-0" id="menu">
+          <li>
+            <a
+              href="nosotros.html"
+              class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blue-400 transition ease-out duration-500"
+            >
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="information-circle w-5 sm:w-6 h-6 inline-block mb-1 transform hover:rotate-360 duration-1000"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              <span>Nosotros</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="/"
+              class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-blue-400 lg:mb-0 mb-2 transition ease-out duration-500 "
+            >
+              <svg
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="mail w-5 sm:w-6 h-6 inline-block mb-1 transform hover:rotate-360 duration-1000"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+              <span>Contacto</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
 
-                </div>
-            </nav>
-        </div> <!-- end nav -->
-
-        <div class="px-6 py-10">
+        <div class="px-6 py-2">
             <header>
-                <h1 class="text-gray-800 text-4xl sm:text-6xl font-semibold mt-6">Equipamiento médico</h1>
+                <h1 class="text-gray-800 text-4xl sm:text-6xl font-semibold">Equipamiento médico</h1>
                 <h3 class=" text-2xl font-semibold">Emergencia y rescate</h3>
             </header>
 
@@ -58,31 +93,31 @@
                     <div class="card hover:shadow-2xl">
                         <img src="img/bolso3.jpg" alt="bolso" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
-                            <span class="font-bold">Medico de Auto</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
+                            <span class="font-bold">Bolso de Emergencia</span>
+                            <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral, bolsillos para medicamentos, ampollas, etc.</span>
                         </div>
                         <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span>48x32x26</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/bolso2.jpg" alt="dos bolsos" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
-                            <span class="font-bold">Medico de Auto</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
+                            <span class="font-bold">Bolso de Anestesia</span>
+                            <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillos para ampollas, laringoscopio, mangos, cánulas de mayo y máscara, separadores en su interior.</span>
                         </div>
                         <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span>48x32x26</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/bolde medico de auto y emergencia.jpg" alt="riñonera" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Bolso Medico de Auto</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
+                            <span class="block text-gray-500 text-sm">Tela impermeable.Bolsillos para medicamentos, separadores en interior para anticépticos, tensometro, gasas, etc. Proteccion antichoque.</span>
                         </div>
                         <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span>42x30x21</span>
                         </div>
                     </div>
                 </div>
@@ -95,20 +130,20 @@
                         <img src="img/mochilaviaaerea2.JPG" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Mochila Via Aerea</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
+                            <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral grande, 2 bolsillos laterales, bolsillos interiores para laringoscopio, cánulas de mayo, sondas, sujetadores de tubo de óxigeno, espacio para bosla de Ambú - Adulto y pediátrico</span>
                         </div>
                         <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span>56x35x16</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/mochilaviaaerea4.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Mochila Via Aerea</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
+                            <span class="block text-gray-500 text-sm">Tela impermeable. Bolsillo lateral grande, 2 bolsillos laterales, bolsillos interiores para laringoscopio, cánulas de mayo, sondas, sujetadores de tubo de óxigeno, espacio para bosla de Ambú - Adulto y pediátrico</span>
                         </div>
                         <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span>56x35x16</span>
                         </div>
                     </div>
                 </div>
@@ -121,30 +156,21 @@
                         <img src="img/chaleco1 de paramedico.jpg" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Paramedico</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm">Con un reflectivo 3M y logo bordado de la empresa. Regulable en ancho y 2 bolsillos en el frente.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/chaleco de extricacion adulto.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Extricacion Adulto</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm">con correas para mentón y frente y suplemento cervical y bolso.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/chalecodeextricacionpediatrico.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Chaleco de Extricacion Pediatrico</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm">Con correas para mentón y frente y sumplemento cervical y bolso.</span>
                         </div>
                     </div>
                 </div>
@@ -157,30 +183,21 @@
                         <img src="img/ferulasrigida.jpg" alt="mochila de rescaste" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Ferulas Rigidas</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm">6 férulas + bolso. 1 pierna lárga, 1 bota, 2 brazos largos y 2 brazos cortos.</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/spider.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Spider</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm">Correas pre-armadas de rescate; permite la extracción del paciente en diferentes cúbitos</span>
                         </div>
                     </div>
                     <div class="card hover:shadow-2xl">
                         <img src="img/fundadetubodeexigeno.jpg" alt="mochila" class="w-full h-32 sm:h-48 object-cover">
                         <div class="m-4">
                             <span class="font-bold">Funda de Tubo de Oxigeno</span>
-                            <span class="block text-gray-500 text-sm">Las medidas son...</span>
-                        </div>
-                        <div class="badge" style="background-color: #00304E; color:white;">
-                            <span>48x25cm</span>
+                            <span class="block text-gray-500 text-sm"></span>
                         </div>
                     </div>
                 </div>
@@ -349,17 +366,17 @@
                     <div class="h-screen w-screen">
                         <div class="mt-8 ml-12">
                             <a href="https://www.facebook.com/Paytechsh-1589295641163926">
-                                <svg class="w-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg>
+                                <svg class="w-6 inline-block transform hover:rotate-360 duration-1000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"/></svg>
                                 Facebook</a>
                         </div>
                         <div class="mt-6 ml-12">
                             <a href="https://www.instagram.com/paytechsh/">
-                            <svg class="w-6 inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M17.946 5.29a6.606 6.606 0 0 0-.418-2.185 4.412 4.412 0 0 0-1.039-1.594A4.412 4.412 0 0 0 14.895.472a6.606 6.606 0 0 0-2.184-.418C11.75.01 11.444 0 9 0S6.25.01 5.29.054a6.606 6.606 0 0 0-2.185.418A4.412 4.412 0 0 0 1.51 1.511 4.412 4.412 0 0 0 .472 3.105a6.606 6.606 0 0 0-.418 2.184C.01 6.25 0 6.556 0 9s.01 2.75.054 3.71a6.606 6.606 0 0 0 .418 2.185 4.412 4.412 0 0 0 1.039 1.594 4.411 4.411 0 0 0 1.594 1.039 6.606 6.606 0 0 0 2.184.418C6.25 17.99 6.556 18 9 18s2.75-.01 3.71-.054a6.606 6.606 0 0 0 2.185-.418 4.602 4.602 0 0 0 2.633-2.633 6.606 6.606 0 0 0 .418-2.184C17.99 11.75 18 11.444 18 9s-.01-2.75-.054-3.71zm-1.62 7.347a4.978 4.978 0 0 1-.31 1.67 2.98 2.98 0 0 1-1.708 1.709 4.979 4.979 0 0 1-1.671.31c-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052a4.979 4.979 0 0 1-1.67-.31 2.788 2.788 0 0 1-1.036-.673 2.788 2.788 0 0 1-.673-1.035 4.978 4.978 0 0 1-.31-1.671c-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637a4.979 4.979 0 0 1 .31-1.67 2.788 2.788 0 0 1 .673-1.036 2.788 2.788 0 0 1 1.035-.673 4.979 4.979 0 0 1 1.671-.31c.95-.043 1.234-.052 3.637-.052s2.688.009 3.637.052a4.979 4.979 0 0 1 1.67.31 2.788 2.788 0 0 1 1.036.673 2.788 2.788 0 0 1 .673 1.035 4.979 4.979 0 0 1 .31 1.671c.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637zM9 4.378A4.622 4.622 0 1 0 13.622 9 4.622 4.622 0 0 0 9 4.378zM9 12a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm5.884-7.804a1.08 1.08 0 1 1-1.08-1.08 1.08 1.08 0 0 1 1.08 1.08z"/></svg>
+                            <svg class="w-6 inline-block transform hover:rotate-360 duration-1000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M17.946 5.29a6.606 6.606 0 0 0-.418-2.185 4.412 4.412 0 0 0-1.039-1.594A4.412 4.412 0 0 0 14.895.472a6.606 6.606 0 0 0-2.184-.418C11.75.01 11.444 0 9 0S6.25.01 5.29.054a6.606 6.606 0 0 0-2.185.418A4.412 4.412 0 0 0 1.51 1.511 4.412 4.412 0 0 0 .472 3.105a6.606 6.606 0 0 0-.418 2.184C.01 6.25 0 6.556 0 9s.01 2.75.054 3.71a6.606 6.606 0 0 0 .418 2.185 4.412 4.412 0 0 0 1.039 1.594 4.411 4.411 0 0 0 1.594 1.039 6.606 6.606 0 0 0 2.184.418C6.25 17.99 6.556 18 9 18s2.75-.01 3.71-.054a6.606 6.606 0 0 0 2.185-.418 4.602 4.602 0 0 0 2.633-2.633 6.606 6.606 0 0 0 .418-2.184C17.99 11.75 18 11.444 18 9s-.01-2.75-.054-3.71zm-1.62 7.347a4.978 4.978 0 0 1-.31 1.67 2.98 2.98 0 0 1-1.708 1.709 4.979 4.979 0 0 1-1.671.31c-.95.043-1.234.052-3.637.052s-2.688-.009-3.637-.052a4.979 4.979 0 0 1-1.67-.31 2.788 2.788 0 0 1-1.036-.673 2.788 2.788 0 0 1-.673-1.035 4.978 4.978 0 0 1-.31-1.671c-.043-.95-.052-1.234-.052-3.637s.009-2.688.052-3.637a4.979 4.979 0 0 1 .31-1.67 2.788 2.788 0 0 1 .673-1.036 2.788 2.788 0 0 1 1.035-.673 4.979 4.979 0 0 1 1.671-.31c.95-.043 1.234-.052 3.637-.052s2.688.009 3.637.052a4.979 4.979 0 0 1 1.67.31 2.788 2.788 0 0 1 1.036.673 2.788 2.788 0 0 1 .673 1.035 4.979 4.979 0 0 1 .31 1.671c.043.95.052 1.234.052 3.637s-.009 2.688-.052 3.637zM9 4.378A4.622 4.622 0 1 0 13.622 9 4.622 4.622 0 0 0 9 4.378zM9 12a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm5.884-7.804a1.08 1.08 0 1 1-1.08-1.08 1.08 1.08 0 0 1 1.08 1.08z"/></svg>
                             Instagram</a>
                         </div>
                         <div class="mt-6 ml-12">
                             <a href="https://wa.me/+543415504254">
-                                <svg class="w-6 inline-block" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>    
+                                <svg class="w-6 inline-block transform hover:rotate-360 duration-1000" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>    
                             WhatsApp</a>
                         </div>
                     </div>
